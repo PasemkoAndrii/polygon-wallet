@@ -1,4 +1,6 @@
 import { AppBar, Button, Toolbar } from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 const buttons = [
   { name: "Create", link: "create" },
@@ -11,7 +13,7 @@ export default function CustomAppBar() {
     <AppBar position="static" sx={{ top: 0 }}>
       <Toolbar>
         {buttons.map((button) => (
-          <Button sx={{ color: "white" }} to={button.link}>
+          <Button sx={{ color: "white" }} to={button.link} component={Link}>
             {button.name}
           </Button>
         ))}
