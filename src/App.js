@@ -1,7 +1,7 @@
 import './App.css';
 import Web3 from "web3";
 import { useState } from "react";
-
+import { CustomAppBar } from './Component/CustomAppBar/CustomAppBar.js';
 const web3 = new Web3(
 
   "https://site1.moralis-nodes.com/amoy/30b0cdbc36154b09a5b40ec1e00cc8c9"
