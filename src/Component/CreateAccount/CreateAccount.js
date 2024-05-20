@@ -1,6 +1,6 @@
 import Web3 from "web3";
 import { useState } from "react";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 const web3 = new Web3(
   "https://site1.moralis-nodes.com/amoy/30b0cdbc36154b09a5b40ec1e00cc8c9",
@@ -17,8 +17,8 @@ export default function CreateAccountComponent() {
 
   return (
     <div>
-      <h1>First Pageomopjopmopmpompomopomomomomoop</h1>
-      <Button>rgergre</Button>
+      <Button>Create New Account</Button>
+      <Typography variant="h4">Account address</Typography>
     </div>
   );
 }
