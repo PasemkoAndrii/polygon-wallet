@@ -1,20 +1,16 @@
-import './App.css';
-import CustomAppBar from './Component/CustomAppBar/CustomAppBar.js';
-import { Routes, Route} from "react-router-dom";
-
-
+import "./App.css";
+import CustomAppBar from "./Component/CustomAppBar/CustomAppBar.js";
+import CreateAccountComponent from "./Component/CreateAccount/CreateAccount.js";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <div className="App">
-      <CustomAppBar/>
+      <CustomAppBar />
       <Routes>
-      <Route path='/' element={<h1>First Pageomopjopmopmpompomopomomomomoop</h1>}/>
-      <Route path='/create' element={<h1>crate acc</h1>}/>
-        
+        <Route path="/" element={CreateAccountComponent} />
+        <Route path="/create" element={CreateAccountComponent} />
       </Routes>
-      
     </div>
   );
 }
